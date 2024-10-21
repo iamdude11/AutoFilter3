@@ -43,7 +43,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/AllnewForward_bot') #Su
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
 #---------------------------------------------------------------
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/Howtodownlaodmp4/1442")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/Howtodownlaodmp4")
 TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/Howtodownlaodmp4/1442")
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/Howtodownlaodmp4/1442")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
