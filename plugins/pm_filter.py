@@ -1016,7 +1016,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
          
-    elif query.data == "group_info":
+    elif query.data == "channels":
         buttons = [[
             InlineKeyboardButton('⚡ Jᴏɪɴ ᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ᴄᴏᴍᴍᴜɴɪᴛʏ ', url="https://t.me/Xeonflix")
        ],[
