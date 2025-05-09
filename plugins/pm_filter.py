@@ -1002,7 +1002,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "rendr":
-        await query.answer("⚡️ ʟɪᴠᴇ sʏsᴛᴇᴍ sᴛᴀᴛᴜs ⚡️\n\n✇ ᴄᴘᴜ : 2.6\n𖤍 ʀᴀᴍ : 58.8\n〄 ᴛᴏᴛᴀʟ ᴅɪsᴋ : 21.5 GiB\n✿ ᴜsᴇᴅ sᴘᴀᴄᴇ : 827.21 MiB (4.0%)\n✫ ғʀᴇᴇ sᴘᴀᴄᴇ : 19.58 GiB\n♡ ᴅᴀᴛᴀ ᴛʀᴀꜰɪᴄs ●●●●◌◌◌◌◌◌\n✪ ᴜᴘᴛɪᴍᴇ ●●●●●●●◌◌◌ 🛰\n\nᴠ4.4 [sᴛᴀʙʟᴇ] """, show_alert=True)
+        await query.answer("⚡️ ʟɪᴠᴇ sʏsᴛᴇᴍ sᴛᴀᴛᴜs ⚡️\n\n✇ ᴄᴘᴜ : 2 vCPU core\n𖤍 ʀᴀᴍ : 4.0\n〄 ᴛᴏᴛᴀʟ ᴅɪsᴋ : 21.5 GiB\n✿ ᴜsᴇᴅ sᴘᴀᴄᴇ : 827.21 MiB (4.0%)\n✫ ғʀᴇᴇ sᴘᴀᴄᴇ : 19.58 GiB\n♡ ᴅᴀᴛᴀ ᴛʀᴀꜰɪᴄs ●●●●◌◌◌◌◌◌\n✪ ᴜᴘᴛɪᴍᴇ ●●●●●●●◌◌◌ 🛰\n\nᴠ4.4 [sᴛᴀʙʟᴇ] """, show_alert=True)
 
     elif query.data == "source":
         buttons = [[
@@ -1016,25 +1016,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
          
-    elif query.data == "channels":
+    elif query.data == "group_info":
         buttons = [[
             InlineKeyboardButton('⚡ Jᴏɪɴ ᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ᴄᴏᴍᴍᴜɴɪᴛʏ ', url="https://t.me/Xeonflix")
        ],[
-            InlineKeyboardButton('📮 Bᴏᴛ uᴘᴅᴀᴛᴇs ', url="t.me/XeonBots"),
-            InlineKeyboardButton('📮 Mᴏᴠɪᴇꜱ ɪɴᴅᴇx ', url="t.me/MovieFlixOcean")
+            InlineKeyboardButton('📮 Mᴏᴠɪᴇꜱ ɪɴᴅᴇx ', url="t.me/MovieFlixOcean"),
+            InlineKeyboardButton('📮 Tᴠ/Wᴇʙ sᴇʀɪᴇs ', url="t.me/SeriesFlixOcean")
        ],[
             InlineKeyboardButton('💌 Aɴɪᴍᴇs ', url="https://t.me/Anime_Xeon"),
-            InlineKeyboardButton('💌 Tᴠ/Wᴇʙ sᴇʀɪᴇs ', url="https://t.me/SeriesFlixOcean")
+            InlineKeyboardButton('💌 Aᴅuʟᴛ ꜰʟɪx ', url="https://t.me/Lusty_cornflix")
        ],[
-            InlineKeyboardButton('📮 xᴇᴏɴ ɪɴᴅᴇx ', url="t.me/TeamXeon"),
-            InlineKeyboardButton('📮 Mᴏᴠɪᴇꜱ ɪɴᴅᴇx2 ', url="t.me/X265HevcMovies01")
-       ],[
-            InlineKeyboardButton('💌 ʜᴇɴᴛᴀɪ ', url="https://t.me/Hentai_Xeon"),
-            InlineKeyboardButton('💌 Mᴏᴠɪᴇꜱ ɪɴᴅᴇx3 ', url="https://t.me/X265HevcMovies02")
-       ],[
-            InlineKeyboardButton('🔞 18+ Aᴅuʟᴛ ᴄʜᴀɴɴᴇʟs ', url="https://t.me/Adult_Infinity")
-       ],[ 
-            InlineKeyboardButton('• ʙᴀᴄᴋ •', callback_data='about')
+            InlineKeyboardButton('• ʙᴀᴄᴋ •', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
